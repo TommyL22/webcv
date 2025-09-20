@@ -160,7 +160,6 @@ html.dark {
 
 /* Prevent images, videos, and SVGs from being inverted */
 html.dark img,
-html.dark video,
-html.dark svg {
+html.dark video{
   filter: invert(1) hue-rotate(180deg);
 }
