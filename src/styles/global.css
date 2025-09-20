@@ -21,6 +21,33 @@ html.dark {
   color: #fff;
 }
 
+html.dark body {
+  background: #0d0950 !important;
+  color: #fff !important;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #fff !important;
+}
+
+html.dark a {
+  color: #a8b4ff;
+}
+
+html.dark code {
+  background-color: #23244a;
+  color: #fff;
+}
+
+html.dark hr {
+  border-top: 1px solid #23244a;
+}
+
 .dark .nav-links a {
   color: #fff;
 }
