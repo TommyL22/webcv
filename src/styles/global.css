@@ -17,12 +17,12 @@
     0 16px 32px rgba(var(--gray), 33%);
 }
 html.dark {
-  background-color: #0d0950;
+  background-color: #181824;
   color: #fff;
 }
 
 html.dark body {
-  background: #0d0950 !important;
+  background: #181824 !important;
   color: #fff !important;
 }
 
@@ -46,6 +46,11 @@ html.dark code {
 
 html.dark hr {
   border-top: 1px solid #23244a;
+}
+
+/* Remove gradient in dark mode */
+html.dark body {
+  background: #181824 !important;
 }
 
 .dark .nav-links a {
