@@ -150,6 +150,7 @@ hr {
 
 html.dark {
   filter: invert(1) hue-rotate(180deg);
+  background: rgb(15, 15, 15);
 }
 
 /* Prevent images, videos, and SVGs from being inverted */
