@@ -25,7 +25,8 @@
   font-display: swap;
 }
 html {
-  background: #fff; /* fallback for light mode */
+  background: linear-gradient(var(--gray-gradient)) no-repeat;
+  background-size: 100% 100%;
 }
 body {
   font-family: "Atkinson", sans-serif;
@@ -33,7 +34,8 @@ body {
   padding: 0;
   text-align: left;
   background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 100vh; /* cover full viewport height */
+  background-size: 100% 100%; /* cover full page height */
+  min-height: 100vh;
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
