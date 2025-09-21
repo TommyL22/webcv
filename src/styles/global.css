@@ -28,12 +28,6 @@ html, body {
   background: #fff;
 }
 
-html {
-  /* Remove gradient from html */
-  /* background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 100%; */
-}
-
 body {
   font-family: "Atkinson", sans-serif;
   margin: 0;
