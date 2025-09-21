@@ -1,214 +1,78 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jun 19 2024"
-heroImage: "/blog-placeholder-1.jpg"
+title: "Ivanti Ticket Report Tool"
+description: "Data visualisation and reporting tool to be used with Ivanti ticketing system"
+pubDate: "Aug 28 2025"
+heroImage: "/public/IvantiTicketReportTool.png"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+# Ivanti Ticket Report Tool
 
-## Headings
+A simple Python Tkinter application for visualizing and analyzing ticket data from CSV files. The tool provides several output methods for quick insights and custom graphing, including ticket age analysis and owner activity over time.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+## Features
 
-# H1
+- **Custom Graph:**  
+  Plot counts of any column (e.g., Owner, Status, Category) with line series for another column.
 
-## H2
+- **Average Ticket Age:**  
+  Bar chart of each owner and the average age (in days) of their tickets, based on the "Created On" date.
 
-### H3
+- **Average Ticket Modified:**  
+  Bar chart of each owner and the average age (in days) since their tickets were last modified, based on the "Modified On" date.
 
-#### H4
+- **Owner Last Modified:**  
+  Select an owner and group their ticket modifications by day, week, or month, visualized as a bar chart.
 
-##### H5
+- **Export Oldest Tickets:**  
+Generate a CSV of tickets older than, or modified before a specified date. This new CSV can then be input to visualise data.
 
-###### H6
+## Usage
 
-## Paragraph
+1. **Install requirements:**
+   ```
+   pip install matplotlib
+   ```
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+2. **Run the tool:**
+   ```
+   python TicketReport.py
+   ```
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+3. **Load your CSV file:**
+   - Click "Open a file" and select your ticket CSV file.
+   - The CSV should have columns like `Owner`, `Created On`, `Modified On`, etc.
 
-## Images
+4. **Choose an output method:**
+   - Use the "Output Method" dropdown to select the type of analysis or graph you want.
 
-### Syntax
+5. **Configure options:**
+   - For "Custom Graph", select X Axis and Line Series columns.
+   - For "Owner Last Modified", select an owner and date grouping (Daily, Weekly, Monthly).
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
+6. **Run the analysis:**
+   - Click "Run tool" to generate the plot.
+
+## CSV Requirements
+
+- The CSV must have a header row.
+- For ticket age features, columns named `Owner`, `Created On`, and/or `Modified On` are required.
+- Date columns must be in the format: `M/D/YYYY H:MM` (e.g., `8/26/2025 14:48`).
+
+## Example Columns
+
+```
+Incident, Status, Customer, Department, Summary, Description, Resolution, Service, Category, Subcategory, Team, Owner, Source, Created On, Modified On, Resolved On, ...
 ```
 
-### Output
+## Screenshots
 
-![blog placeholder](/blog-placeholder-about.jpg)
+<img width="2000" height="1347" alt="IvantiTIcketReportTool" src="/public/IvantiTicketReportTool.png">
 
-## Blockquotes
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+## License
 
-### Blockquote without attribution
+MIT License
 
-#### Syntax
+---
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-### Syntax
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-### Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+**Developed for quick ticket data analysis and visualisation**
