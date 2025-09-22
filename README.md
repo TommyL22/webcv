@@ -1,4 +1,4 @@
-# Web CV – [Your Name]
+# Web CV – Thomas Lind
 
 Welcome to my personal Web CV, built with Astro. This site showcases my professional experience, skills, projects, and education in a clean, modern, and responsive format.
 
