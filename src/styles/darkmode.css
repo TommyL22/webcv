@@ -5,13 +5,13 @@ html.dark {
 }
 
 html.dark body {
-  background: linear-gradient(180deg, #23263a 0%, #181a20 100%) no-repeat;
+  background: linear-gradient(180deg, #181a20 0%, #23263a 100%) no-repeat;
   color: #e5e9f0;
 }
 
 html.dark header,
 html.dark footer {
-  background: linear-gradient(180deg, #23263a 0%, #181a20 100%) no-repeat;
+  background: linear-gradient(180deg, #181a20 0%, #23263a 100%) no-repeat;
 }
 
 html.dark main {
