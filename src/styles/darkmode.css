@@ -1,0 +1,72 @@
+html.dark {
+  filter: none;
+  background: #181a20;
+  color: #e5e9f0;
+}
+
+html.dark body {
+  background: linear-gradient(180deg, #23263a 0%, #181a20 100%) no-repeat;
+  color: #e5e9f0;
+}
+
+html.dark header,
+html.dark footer {
+  background: linear-gradient(180deg, #23263a 0%, #181a20 100%) no-repeat;
+}
+
+html.dark main {
+  background: none;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #fff;
+}
+
+html.dark a {
+  color: #7aa2f7;
+}
+
+html.dark a:hover {
+  color: #a6adff;
+}
+
+html.dark code {
+  background-color: #23263a;
+  color: #e5e9f0;
+}
+
+html.dark pre {
+  background-color: #23263a;
+  color: #e5e9f0;
+}
+
+html.dark blockquote {
+  border-left: 4px solid #7aa2f7;
+  color: #bfc7d5;
+}
+
+html.dark hr {
+  border-top: 1px solid #23263a;
+}
+
+html.dark table {
+  background-color: #23263a;
+  color: #e5e9f0;
+}
+
+html.dark input,
+html.dark textarea {
+  background-color: #23263a;
+  color: #e5e9f0;
+  border: 1px solid #444a60;
+}
+
+html.dark img,
+html.dark video {
+  filter: none;
+}
