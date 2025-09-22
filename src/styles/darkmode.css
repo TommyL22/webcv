@@ -11,7 +11,7 @@ html.dark body {
 
 html.dark header,
 html.dark footer {
-  background: #23263a; /* Flat color instead of gradient */
+  background: #141621; /* Flat color instead of gradient */
 }
 
 html.dark main {
