@@ -5,19 +5,19 @@ html.dark {
 }
 
 html.dark body {
-  background: linear-gradient(180deg, #23263a 0%, #282a36 100%) no-repeat;
+  background: #23263a; /* Flat color instead of gradient */
   color: #e5e9f0;
 }
 
 html.dark header,
 html.dark footer {
-  background: linear-gradient(180deg, #23263a 0%, #22232e 100%) no-repeat;
+  background: #23263a; /* Flat color instead of gradient */
 }
 
 html.dark main {
-  background: rgba(34, 35, 46, 0.96);
-  border-radius: 12px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 html.dark h1,
