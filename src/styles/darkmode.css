@@ -1,21 +1,23 @@
 html.dark {
   filter: none;
-  background: #181a20;
+  background: #20222b;
   color: #e5e9f0;
 }
 
 html.dark body {
-  background: linear-gradient(180deg, #181a20 0%, #23263a 100%) no-repeat;
+  background: linear-gradient(180deg, #23263a 0%, #282a36 100%) no-repeat;
   color: #e5e9f0;
 }
 
 html.dark header,
 html.dark footer {
-  background: linear-gradient(180deg, #181a20 0%, #23263a 100%) no-repeat;
+  background: linear-gradient(180deg, #23263a 0%, #22232e 100%) no-repeat;
 }
 
 html.dark main {
-  background: none;
+  background: rgba(34, 35, 46, 0.96);
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.12);
 }
 
 html.dark h1,
@@ -24,15 +26,15 @@ html.dark h3,
 html.dark h4,
 html.dark h5,
 html.dark h6 {
-  color: #fff;
+  color: #f3f6fa;
 }
 
 html.dark a {
-  color: #7aa2f7;
+  color: #8aadf4;
 }
 
 html.dark a:hover {
-  color: #a6adff;
+  color: #b7c9f7;
 }
 
 html.dark code {
@@ -46,7 +48,7 @@ html.dark pre {
 }
 
 html.dark blockquote {
-  border-left: 4px solid #7aa2f7;
+  border-left: 4px solid #8aadf4;
   color: #bfc7d5;
 }
 
