@@ -26,7 +26,9 @@ html.dark h3,
 html.dark h4,
 html.dark h5,
 html.dark h6,
-html.dark p{
+html.dark p,
+html.dark li,
+html.dark ul{
   color: #f3f6fa;
 }
 
