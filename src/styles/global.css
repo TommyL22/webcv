@@ -30,8 +30,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 100%;
+  background: #e5e9f0; /* Flat pale background */
   min-height: 100vh;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -40,10 +39,10 @@ body {
   line-height: 1.7;
 }
 
-/* Gradient only for header and footer */
+/* Header and footer: flat, slightly darker than body */
 header, footer {
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 100%;
+  background: #20222b;
+  color: #fff;
 }
 main {
   width: 720px;
