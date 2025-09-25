@@ -156,12 +156,6 @@ hr {
   white-space: nowrap;
 }
 
-html.dark {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-/* Prevent images, videos, and SVGs from being inverted */
-html.dark img,
-html.dark video{
-  filter: invert(1) hue-rotate(180deg);
+.tech-card {
+  background: #fff;
 }

@@ -73,3 +73,7 @@ html.dark img,
 html.dark video {
   filter: none;
 }
+
+html.dark .tech-card {
+  background: #485469;
+}

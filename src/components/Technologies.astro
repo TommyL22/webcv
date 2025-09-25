@@ -1,15 +1,15 @@
 ---
 // filepath: src/components/Technologies.astro
 const technologies = [
-  { name: "Cisco", img: "/tech/blog-placeholder-about.jpg", alt: "Python" },
-  { name: "Palo Alto", img: "/tech/blog-placeholder-about.jpg", alt: "Palo Alto" },
-  { name: "Defender", img: "/tech/blog-placeholder-about.jpg", alt: "Defender" },
-  { name: "Rapid7", img: "/tech/blog-placeholder-about.jpg", alt: "Rapid7" },
-  { name: "Linux", img: "/tech/blog-placeholder-about.jpg", alt: "Linux" },
-  { name: "Docker", img: "/tech/blog-placeholder-about.jpg", alt: "Docker" },
-  { name: "Python", img: "/tech/blog-placeholder-about.jpg", alt: "Python" },
-  { name: "Azure", img: "/tech/blog-placeholder-about.jpg", alt: "Azure" },
-  { name: "M365", img: "/tech/blog-placeholder-about.jpg", alt: "M365" },
+  { name: "Cisco", img: "/tech/cisco.png", alt: "Python" },
+  { name: "Palo Alto", img: "/tech/palto-alto.png", alt: "Palo Alto" },
+  { name: "Defender", img: "/tech/defender.png", alt: "Defender" },
+  { name: "Rapid7", img: "/tech/rapid7.png", alt: "Rapid7" },
+  { name: "Linux", img: "/tech/linux.png", alt: "Linux" },
+  { name: "Docker", img: "/tech/docker.png", alt: "Docker" },
+  { name: "Python", img: "/tech/python.png", alt: "Python" },
+  { name: "Azure", img: "/tech/azure.png", alt: "Azure" },
+  { name: "M365", img: "/tech/m365.png", alt: "M365" },
 ];
 ---
 <section style="margin-top: 4em;">
@@ -22,7 +22,7 @@ const technologies = [
     ">
     {technologies.map(tech => (
       <div style="
-        background: #fff;
+        class=tech-card;
         border-radius: 14px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         padding: 0.7em 0.5em;
