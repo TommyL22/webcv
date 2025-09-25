@@ -2,7 +2,7 @@
 title: "Ivanti Ticket Report Tool"
 description: "Data visualisation and reporting tool to be used with Ivanti ticketing system"
 pubDate: "Aug 28 2025"
-heroImage: "/IvantiTicketReportTool.png"
+heroImage: "/ivanti-ticket-report-tool.jpg"
 ---
 
 A simple Python Tkinter application for visualizing and analyzing ticket data from CSV files. The tool provides several output methods for quick insights and custom graphing, including ticket age analysis and owner activity over time.
