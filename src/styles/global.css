@@ -41,8 +41,8 @@ body {
 
 /* Header and footer: flat, slightly darker than body */
 header, footer {
-  background: #20222b;
-  color: #fff;
+  background: #fff;
+  color: rgb(96, 115, 159);
 }
 main {
   width: 720px;
