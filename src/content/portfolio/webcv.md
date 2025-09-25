@@ -1,3 +1,10 @@
+---
+title: "Astro Web CV"
+description: "Web CV and Portfolio written modularly with Astro"
+pubDate: "Sep 20 2025"
+heroImage: "/webcv.jpg"
+---
+
 # Web CV – Thomas Lind
 
 Welcome to my personal Web CV, built with Astro. This site showcases my professional experience, skills, projects, and education in a clean, modern, and responsive format.
