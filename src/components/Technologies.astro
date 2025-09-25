@@ -1,7 +1,6 @@
 ---
-// filepath: src/components/Technologies.astro
 const technologies = [
-  { name: "Cisco", img: "/tech/cisco.png", alt: "Python" },
+  { name: "Cisco", img: "/tech/cisco.png", alt: "Cisco" },
   { name: "Palo Alto", img: "/tech/palo-alto.png", alt: "Palo Alto" },
   { name: "Defender", img: "/tech/defender.png", alt: "Defender" },
   { name: "Rapid7", img: "/tech/rapid7.png", alt: "Rapid7" },
@@ -21,20 +20,19 @@ const technologies = [
     align-items: center;
     ">
     {technologies.map(tech => (
-      <div style="
-        class=tech-card;
+      <div class="tech-card" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
         border-radius: 14px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        padding: 0.7em 0.5em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-width: 160px;
-        min-height: 80px;
+        padding: 1.5em;
+        min-width: 180px;
+        min-height: 120px;
         transition: transform 0.15s;
       " onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        <img src={tech.img} alt={tech.alt} style="max-width: 160px; max-height: 80px; margin-bottom: 0.5em;" />
-        <span style="font-size: 1.1em; font-weight: bold; color: #23263a;">{tech.name}</span>
+        <img src={tech.img} alt={tech.alt} style="max-width: 140px; max-height: 90px; display: block; margin: 0 auto;" />
       </div>
     ))}
   </div>
