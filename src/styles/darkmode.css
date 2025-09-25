@@ -79,3 +79,7 @@ html.dark video {
 html.dark .tech-card {
   background: #313844;
 }
+
+html.dark .title {
+  color: white
+}
